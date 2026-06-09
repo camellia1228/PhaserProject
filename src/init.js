@@ -1,0 +1,20 @@
+import Phaser from "phaser";
+import Game from "./game";
+import GameOver from "./gameover";
+
+const config = {
+    width: 600,
+    height: 300,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
+    autoRound: false,
+    parent: "contenedor",
+    physics: {
+        default: "arcade",
+        arcade: {
+            gravity: { y: 350}
+        }
+    }
+}
